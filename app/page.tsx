@@ -1,13 +1,10 @@
-import {use} from 'react';
-import ServerContext from './ServerContext';
+import ServerContextValue from './ServerContextValue';
 
 export default function Home() {
-  const serverContextValue = use(ServerContext);
-
   return (
     <>
       <h1>Home</h1>
-      <p>Server context value: {serverContextValue}</p>
+      <ServerContextValue />
     </>
   );
 }
