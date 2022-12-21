@@ -9,7 +9,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
-        <ServerContext.Provider value="changed">
+        <ServerContext.Provider value="Updated server context value (correct)">
           <Navigation />
           {children}
         </ServerContext.Provider>
