@@ -1,11 +1,11 @@
 import {use} from 'react';
 import ServerContext from '../ServerContext';
 
-export default function Nested() {
+export default function About() {
   const serverContextValue: string = use(ServerContext);
   return (
     <>
-      <h1>Nested</h1>
+      <h1>About</h1>
       {serverContextValue}
     </>
   );
