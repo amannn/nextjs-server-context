@@ -1,7 +1,6 @@
-// @ts-expect-error
 import {createServerContext} from 'react';
 
-export default createServerContext(
+export default createServerContext<string>(
   'server',
   'Initial server context value (incorrect)'
 );
